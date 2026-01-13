@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from '@/components/Home/Hero'
+import Stats from '@/components/Home/Stats'
 import People from '@/components/Home/People'
 import Features from '@/components/Home/Features'
 import Business from '@/components/Home/Business'
@@ -17,6 +18,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <Stats />
       <People />
       <Features />
       <Business />
