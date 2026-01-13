@@ -1,12 +1,12 @@
 import { NextResponse } from 'next/server'
 
-import { headerItem } from '@/types/menu'
+import { HeaderItem } from '@/types/menu'
 import { featureData } from '@/types/featuredata'
 import { socialLinksData } from '@/types/sociallinks'
 import { plansData } from '@/types/plans'
 import { footerlLinksData } from '@/types/footerlinks'
 
-const HeaderData: headerItem[] = [
+const HeaderData: HeaderItem[] = [
   { label: 'Product', href: '/#product' },
   { label: 'Pricing', href: '/#pricing' },
   { label: 'Features', href: '/#features ' },
