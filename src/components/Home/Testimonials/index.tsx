@@ -105,7 +105,7 @@ const Testimonials = () => {
   const maxIndex = Math.max(0, testimonialsData.length - itemsPerView)
 
   useEffect(() => {
-    if (isPaused) return
+    if (isPaused || maxIndex === 0) return
 
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1))

@@ -6,6 +6,7 @@ import Features from '@/components/Home/Features'
 import Business from '@/components/Home/Business'
 import Payment from '@/components/Home/Payment'
 import Pricing from '@/components/Home/Pricing'
+import Testimonials from '@/components/Home/Testimonials'
 import FAQ from '@/components/Home/FAQ'
 import Newsletter from '@/components/Home/Newsletter'
 import CTA from '@/components/Home/CTA'
@@ -26,6 +27,7 @@ export default function Home() {
       <Features />
       <Business />
       <Payment />
+      <Testimonials />
       <Pricing />
       <CTA />
       <FAQ />
