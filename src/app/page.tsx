@@ -7,6 +7,7 @@ import Business from '@/components/Home/Business'
 import Payment from '@/components/Home/Payment'
 import Pricing from '@/components/Home/Pricing'
 import FAQ from '@/components/Home/FAQ'
+import Newsletter from '@/components/Home/Newsletter'
 import { Metadata } from 'next'
 import ContactForm from '@/components/Contact/Form'
 
@@ -26,6 +27,7 @@ export default function Home() {
       <Payment />
       <Pricing />
       <FAQ />
+      <Newsletter />
       <ContactForm />
     </main>
   )

@@ -16,12 +16,18 @@ const Newsletter = () => {
     e.preventDefault()
 
     if (!email) {
-      toast.error('Please enter your email address')
+      toast.error('Please enter your email address', {
+        icon: '📧',
+        duration: 3000,
+      })
       return
     }
 
     if (!validateEmail(email)) {
-      toast.error('Please enter a valid email address')
+      toast.error('Please enter a valid email address', {
+        icon: '⚠️',
+        duration: 3000,
+      })
       return
     }
 
@@ -29,7 +35,10 @@ const Newsletter = () => {
 
     // Simulate API call
     setTimeout(() => {
-      toast.success('Thanks for subscribing! Check your inbox for confirmation.')
+      toast.success('Thanks for subscribing! Check your inbox for confirmation.', {
+        icon: '🎉',
+        duration: 4000,
+      })
       setEmail('')
       setIsLoading(false)
     }, 1500)
