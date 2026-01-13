@@ -60,8 +60,12 @@ const StatCard = ({ stat }: { stat: StatData }) => {
 
 const Stats = () => {
   return (
-    <section className='py-20 bg-gradient-to-b from-white to-header'>
-      <div className='container'>
+    <section className='py-20 bg-gradient-to-b from-white to-header relative overflow-hidden'>
+      {/* Decorative background elements */}
+      <div className='absolute top-0 left-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl'></div>
+      <div className='absolute bottom-0 right-0 w-96 h-96 bg-deepSlate/5 rounded-full blur-3xl'></div>
+      
+      <div className='container relative z-10'>
         <div className='text-center mb-16'>
           <h2 className='text-4xl sm:text-5xl font-semibold text-midnight_text mb-6'>
             Trusted by thousands worldwide
