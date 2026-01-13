@@ -8,6 +8,7 @@ import Business from '@/components/Home/Business'
 import Payment from '@/components/Home/Payment'
 import Pricing from '@/components/Home/Pricing'
 import Testimonials from '@/components/Home/Testimonials'
+import Blog from '@/components/Home/Blog'
 import FAQ from '@/components/Home/FAQ'
 import Newsletter from '@/components/Home/Newsletter'
 import CTA from '@/components/Home/CTA'
@@ -32,6 +33,7 @@ export default function Home() {
       <Testimonials />
       <Pricing />
       <CTA />
+      <Blog />
       <FAQ />
       <Newsletter />
       <ContactForm />
