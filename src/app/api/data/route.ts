@@ -1,10 +1,10 @@
 import { NextResponse } from 'next/server'
 
-import { headerItem } from '@/app/types/menu'
-import { featureData } from '@/app/types/featuredata'
-import { socialLinksData } from '@/app/types/sociallinks'
-import { plansData } from '@/app/types/plans'
-import { footerlLinksData } from '@/app/types/footerlinks'
+import { headerItem } from '@/types/menu'
+import { featureData } from '@/types/featuredata'
+import { socialLinksData } from '@/types/sociallinks'
+import { plansData } from '@/types/plans'
+import { footerlLinksData } from '@/types/footerlinks'
 
 const HeaderData: headerItem[] = [
   { label: 'Product', href: '/#product' },
