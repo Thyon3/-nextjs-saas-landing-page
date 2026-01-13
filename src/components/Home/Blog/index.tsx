@@ -52,7 +52,7 @@ const blogPosts: BlogPost[] = [
 
 const BlogCard = ({ post }: { post: BlogPost }) => {
   return (
-    <article className='bg-white rounded-2xl overflow-hidden shadow-featureShadow hover:shadow-xl transition-all duration-300 group h-full flex flex-col'>
+    <article className='bg-white rounded-2xl overflow-hidden shadow-featureShadow hover:shadow-xl transition-all duration-300 group h-full flex flex-col hover:-translate-y-2'>
       <div className='relative h-56 overflow-hidden'>
         <Image
           src={post.image}
@@ -62,10 +62,11 @@ const BlogCard = ({ post }: { post: BlogPost }) => {
           className='w-full h-full object-cover group-hover:scale-110 transition-transform duration-500'
         />
         <div className='absolute top-4 left-4'>
-          <span className='bg-primary text-white px-4 py-2 rounded-full text-sm font-semibold'>
+          <span className='bg-primary text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg'>
             {post.category}
           </span>
         </div>
+        <div className='absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
       </div>
 
       <div className='p-6 flex flex-col flex-grow'>
