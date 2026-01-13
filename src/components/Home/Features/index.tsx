@@ -19,21 +19,21 @@ const Features = () => {
           {featureData.map((item, i) => (
             <div
               key={i}
-              className='bg-white rounded-2xl p-5 shadow-featureShadow'>
+              className='bg-white rounded-2xl p-5 shadow-featureShadow hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group'>
               <Image
                 src={item.imgSrc}
                 alt={item.imgSrc}
                 width={55}
                 height={55}
-                className='mb-2'
+                className='mb-2 group-hover:scale-110 transition-transform duration-300'
               />
-              <h3 className='text-2xl font-semibold text-black mt-5'>
+              <h3 className='text-2xl font-semibold text-black mt-5 group-hover:text-primary transition-colors duration-300'>
                 {item.heading}
               </h3>
               <h4 className='text-lg text-black/50 my-2'>{item.paragraph}</h4>
               <Link
                 href={'/'}
-                className='text-primary hover:text-blue-700 text-xl font-medium flex items-center gap-2 mt-10 pb-2'>
+                className='text-primary hover:text-blue-700 text-xl font-medium flex items-center gap-2 mt-10 pb-2 hover:gap-3 transition-all duration-300'>
                 Learn more
                 <Icon icon='tabler:arrow-right' className='text-2xl' />
               </Link>

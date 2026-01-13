@@ -128,7 +128,7 @@ const Pricing = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-16 mx-5 gap-6'>
           {filteredData.map((item, index) => (
             <div
-              className='pt-10 pb-28 pl-10 pr-10 bg-white rounded-3xl bxshd relative cursor-pointer hover:bg-primary group'
+              className='pt-10 pb-28 pl-10 pr-10 bg-white rounded-3xl bxshd relative cursor-pointer hover:bg-primary group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl'
               key={index}>
               <Image
                 src={item.imgSrc}
