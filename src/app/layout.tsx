@@ -1,6 +1,7 @@
 import { Poppins } from 'next/font/google'
 import './globals.css'
 import ScrollProgress from '@/components/Common/ScrollProgress'
+import BackToTop from '@/components/Common/BackToTop'
 
 const font = Poppins({
   subsets: ['latin'],
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang='en' suppressHydrationWarning>
       <body className={`${font.className}`}>
         <ScrollProgress />
+        <BackToTop />
         {children}
       </body>
     </html>

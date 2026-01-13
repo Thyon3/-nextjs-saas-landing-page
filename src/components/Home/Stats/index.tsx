@@ -45,13 +45,13 @@ const StatCard = ({ stat }: { stat: StatData }) => {
   return (
     <div
       ref={ref}
-      className='flex flex-col items-center justify-center p-8 bg-white rounded-2xl shadow-featureShadow hover:shadow-xl transition-shadow duration-300 group'>
+      className='flex flex-col items-center justify-center p-8 bg-white rounded-2xl shadow-featureShadow hover:shadow-xl transition-all duration-300 group hover:-translate-y-2'>
       <div className='text-5xl sm:text-6xl font-bold text-primary mb-4 group-hover:scale-110 transition-transform duration-300'>
         {stat.prefix}
         {count}
         {stat.suffix}
       </div>
-      <p className='text-lg sm:text-xl text-black/70 font-medium text-center'>
+      <p className='text-lg sm:text-xl text-black/70 font-medium text-center group-hover:text-midnight_text transition-colors duration-300'>
         {stat.label}
       </p>
     </div>
