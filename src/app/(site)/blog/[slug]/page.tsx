@@ -8,16 +8,18 @@ export const metadata: Metadata = {
 }
 
 interface Props {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
-export default function BlogSinglePage({ params }: Props) {
+export default async function BlogSinglePage({ params }: Props) {
+  const { slug } = await params
+  
   return (
     <>
       <Breadcrumb pageName='Blog Post' />
-      <BlogSingle slug={params.slug} />
+      <BlogSingle slug={slug} />
     </>
   )
 }
