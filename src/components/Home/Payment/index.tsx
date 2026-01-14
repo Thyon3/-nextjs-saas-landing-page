@@ -25,7 +25,7 @@ const Payment = () => {
               quae ab.
             </p>
             <Link
-              href={'/'}
+              href={'/features'}
               className='text-primary hover:text-blue-700 text-lg font-medium flex items-center gap-2 pt-4 mx-auto lg:mx-0'>
               Learn more
               <Icon icon='tabler:arrow-right' className='text-2xl' />

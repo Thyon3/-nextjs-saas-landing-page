@@ -39,7 +39,7 @@ const People = () => {
               quae ab.
             </h3>
             <Link
-              href={'/'}
+              href={'/about'}
               className='text-primary hover:text-blue-700 text-lg font-medium flex items-center gap-2 mx-auto lg:mx-0 pt-5 lg:pt-0'>
               Learn more
               <Icon icon='tabler:arrow-right' className='text-2xl' />
