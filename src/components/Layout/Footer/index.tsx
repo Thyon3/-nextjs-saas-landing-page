@@ -31,16 +31,12 @@ const socialLinks: socialLinks[] = [
   },
 ]
 
-const links: links[] = [
-  {
-    link: 'Product',
-  },
-  {
-    link: 'Pricing',
-  },
-  {
-    link: 'Features',
-  },
+const links = [
+  { label: 'Features', href: '/features' },
+  { label: 'Pricing', href: '/pricing' },
+  { label: 'About', href: '/about' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'Contact', href: '/contact' },
 ]
 
 const footer = () => {
@@ -60,13 +56,13 @@ const footer = () => {
             </div>
           </div>
           <div className='sm:col-span-6 lg:col-span-5 flex items-center'>
-            <div className='flex gap-4'>
-              {links.map((items, i) => (
+            <div className='flex flex-wrap gap-4'>
+              {links.map((item, i) => (
                 <div key={i}>
                   <Link
-                    href='/'
-                    className='text-lg font-normal text-white flex items-center justify-center'>
-                    {items.link}
+                    href={item.href}
+                    className='text-lg font-normal text-white flex items-center justify-center hover:text-primary transition-colors duration-300'>
+                    {item.label}
                   </Link>
                 </div>
               ))}
@@ -94,14 +90,14 @@ const footer = () => {
             </Link>
           </h4>
           <div className='flex gap-5 mt-6 md:mt-0 justify-center md:justify-start'>
-            <h4 className='opacity-60 text-lg font-normal text-white'>
-              <Link href='/' target='_blank'>
+            <h4 className='opacity-60 text-lg font-normal text-white hover:opacity-100 transition-opacity duration-300'>
+              <Link href='/privacy-policy'>
                 Privacy policy
               </Link>
             </h4>
             <div className='h-5 bg-white opacity-60 w-0.5'></div>
-            <h4 className='opacity-60 text-lg font-normal text-white'>
-              <Link href='/' target='_blank'>
+            <h4 className='opacity-60 text-lg font-normal text-white hover:opacity-100 transition-opacity duration-300'>
+              <Link href='/terms'>
                 Terms & conditions
               </Link>
             </h4>
