@@ -7,11 +7,20 @@ export const metadata: Metadata = {
   description: 'Create a new password for your account',
 }
 
-export default function ResetPasswordPage() {
+interface Props {
+  searchParams: Promise<{
+    token?: string
+  }>
+}
+
+export default async function ResetPasswordPage({ searchParams }: Props) {
+  const params = await searchParams
+  const token = params.token || 'default-token'
+  
   return (
     <>
       <Breadcrumb pageName='Reset Password' />
-      <ResetPassword />
+      <ResetPassword token={token} />
     </>
   )
 }
