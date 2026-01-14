@@ -32,7 +32,7 @@ const Features = () => {
               </h3>
               <h4 className='text-lg text-black/50 my-2'>{item.paragraph}</h4>
               <Link
-                href={'/'}
+                href={'/features'}
                 className='text-primary hover:text-blue-700 text-xl font-medium flex items-center gap-2 mt-10 pb-2 hover:gap-3 transition-all duration-300'>
                 Learn more
                 <Icon icon='tabler:arrow-right' className='text-2xl' />
