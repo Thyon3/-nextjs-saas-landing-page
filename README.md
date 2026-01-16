@@ -608,14 +608,20 @@ Built with these amazing technologies:
 
 ## 📸 Screenshots
 
-### Desktop View
-![Desktop Preview](#)
+### 🏠 Hero Section
+The stunning landing page with animated hero banner, featuring eye-catching CTAs and modern design elements.
 
-### Mobile View
-![Mobile Preview](#)
+![Hero Section](./screenshots/Hero.png)
 
-### Dark Mode
-![Dark Mode Preview](#)
+### 💰 Pricing Plans
+Flexible pricing tables with feature comparisons, perfect for SaaS products and subscription services.
+
+![Pricing Section](./screenshots/Pricing.png)
+
+### ✨ Full Page Overview
+Complete showcase of all sections including features, testimonials, FAQ, and more in a seamless layout.
+
+![Full Page Preview](./screenshots/Screenshot1.png)
 
 ---
 
